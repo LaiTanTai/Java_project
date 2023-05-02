@@ -26,11 +26,15 @@
         <form action="<%=contextPath%>/login" method="post">
             <div class="form-group">
               <label>Email</label>
-              <input type="email" class="form-control" name="username">
+              <input type="email" class="form-control" name="username" value="${username}">
             </div>
             <div class="form-group">
               <label>Mật khẩu</label>
-              <input type="password" class="form-control" name="password">
+              <input type="password" class="form-control" name="password" value="${password}">
+            </div>
+            <div class="form-group">
+                <label>Nhớ mật khẩu</label>
+             <input type="checkbox" class="form-control" name="remember">
             </div>
             <button type="submit" class="btn btn-primary">Đăng nhập</button>
           </form>
